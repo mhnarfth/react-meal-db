@@ -23,10 +23,10 @@ const Restaurant = () => {
   return (
     <div>
       <TextField
+        id="outlined-basic"
         onChange={handleSearchField}
-        id="filled-basic"
-        label="Enter Desired Meal"
-        variant="filled"
+        label="Outlined"
+        variant="outlined"
       />
 
       <Grid
