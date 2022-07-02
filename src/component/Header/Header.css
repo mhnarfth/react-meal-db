@@ -1,0 +1,11 @@
+ul li{
+    list-style: none;
+    display: inline;
+    font-size: 20px;
+    margin-right: 10px;
+    font-weight: 400;
+}
+
+.navlink-style{
+text-decoration: none;
+}
