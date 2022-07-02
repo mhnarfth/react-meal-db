@@ -1,5 +1,6 @@
 import { TextField } from "@mui/material";
 import React, { useEffect, useState } from "react";
+import Grid from "@mui/material/Grid";
 import Meal from "../Meal/Meal";
 
 const Restaurant = () => {
@@ -27,9 +28,18 @@ const Restaurant = () => {
         label="Enter Desired Meal"
         variant="filled"
       />
-      {meals.map((meal) => (
-        <Meal key={meal.idMeal} meal={meal}></Meal>
-      ))}
+
+      <Grid
+        container
+        spacing={{ xs: 2, md: 3 }}
+        columns={{ xs: 4, sm: 8, md: 12 }}
+      >
+        {meals.map((meal) => (
+          <Grid item xs={2} sm={4} md={4} key={meal.idMeal}>
+            <Meal meal={meal}></Meal>
+          </Grid>
+        ))}
+      </Grid>
     </div>
   );
 };
