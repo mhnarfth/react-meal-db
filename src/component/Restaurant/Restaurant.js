@@ -28,6 +28,8 @@ const Restaurant = () => {
         label="Outlined"
         variant="outlined"
       />
+      <br />
+      <br />
 
       <Grid
         container
