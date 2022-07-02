@@ -74,7 +74,7 @@ const Meal = (props) => {
           </Typography>
         </CardContent>
         <CardActions disableSpacing>
-          <IconButton aria-label="add to favorites">
+          <IconButton className="favourite-btn" aria-label="add to favorites">
             <FavoriteIcon />
           </IconButton>
           <IconButton href={strYoutube} aria-label="share">
